@@ -1017,6 +1017,16 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-light{
   font-weight: 300;
 }
@@ -1069,6 +1079,10 @@ video {
   transition-delay: 1000ms;
 }
 
+.delay-500{
+  transition-delay: 500ms;
+}
+
 .duration-1000{
   transition-duration: 1000ms;
 }
@@ -1079,6 +1093,18 @@ video {
 
 .duration-\[3s\]{
   transition-duration: 3s;
+}
+
+.duration-\[\]{
+  transition-duration: ;
+}
+
+.duration-\[2s\]{
+  transition-duration: 2s;
+}
+
+.duration-700{
+  transition-duration: 700ms;
 }
 
 .ease-in{
@@ -1166,9 +1192,19 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
 }
 
+.group:hover .group-hover\:bg-gradient-to-tr{
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
 .group:hover .group-hover\:text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.group:hover .group-hover\:transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .group\/ham:active .group-active\/ham\:translate-x-\[2px\]{
@@ -1219,6 +1255,16 @@ video {
 
 .group\/ham:active .group-active\/ham\:ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.group .group-\[\]\:transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.group .group-\[\]\:hover\:bg-gradient-to-tr:hover{
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
 @media (max-width: 425px){
